@@ -1,4 +1,4 @@
-package com.bolkimen.palindrome;
+package com.bolkimen.sandbox.trees.palindrome;
 
 public class Palindrome {
 

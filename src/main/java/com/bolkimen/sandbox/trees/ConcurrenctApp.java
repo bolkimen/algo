@@ -1,11 +1,8 @@
-package com.bolkimen;
+package com.bolkimen.sandbox.trees;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 class Lock{
     private boolean isLocked      = false;

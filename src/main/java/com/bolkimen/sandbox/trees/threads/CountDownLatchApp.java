@@ -1,4 +1,4 @@
-package com.bolkimen.threads;
+package com.bolkimen.sandbox.trees.threads;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
