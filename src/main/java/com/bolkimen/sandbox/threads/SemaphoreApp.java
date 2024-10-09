@@ -1,4 +1,4 @@
-package com.bolkimen.sandbox.trees.threads;
+package com.bolkimen.sandbox.threads;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

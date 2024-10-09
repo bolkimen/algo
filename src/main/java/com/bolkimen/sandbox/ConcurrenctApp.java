@@ -1,4 +1,4 @@
-package com.bolkimen.sandbox.trees;
+package com.bolkimen.sandbox;
 
 import java.util.ArrayList;
 import java.util.Collections;

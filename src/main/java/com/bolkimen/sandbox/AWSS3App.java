@@ -1,4 +1,4 @@
-package com.bolkimen.sandbox.trees;
+package com.bolkimen.sandbox;
 
 import java.io.IOException;
 import software.amazon.awssdk.core.sync.RequestBody;

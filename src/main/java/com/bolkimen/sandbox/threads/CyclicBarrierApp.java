@@ -1,9 +1,6 @@
-package com.bolkimen.sandbox.trees.threads;
+package com.bolkimen.sandbox.threads;
 
-import java.util.concurrent.BrokenBarrierException;
-import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 public class CyclicBarrierApp {
 
@@ -16,7 +13,7 @@ public class CyclicBarrierApp {
         }
     });
 
-    public static void main(String[] args) {
+    private void main1() {
         ExecutorService service = Executors.newFixedThreadPool(5);
         for (int i = 0; i<20; i++) {
             service.submit(() -> {
@@ -32,4 +29,25 @@ public class CyclicBarrierApp {
         service.shutdown();
     }
 
+    public static void main(String[] args) {
+        ExecutorService es = Executors.newFixedThreadPool(5);
+        Future res = es.submit(() -> {
+            sleep(1000);
+            System.out.println("Hello");
+        });
+
+        while (!res.isDone()) {
+            sleep(1000);
+        }
+        es.shutdownNow();
+    }
+
+
+    private static void sleep(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
